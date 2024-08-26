@@ -10,7 +10,7 @@ def print_pregunta(enunciado, alternativas):
         
 if __name__ == '__main__':
     # Las preguntas y alternativas deben mostrarse según lo indicado
-    pregunta = p.pool_preguntas['basicas']['pregunta_1']
+    pregunta = p.pool_preguntas['intermedias']['pregunta_3']
     print_pregunta(pregunta['enunciado'],pregunta['alternativas'])
     
     # Enunciado básico 1

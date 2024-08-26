@@ -31,7 +31,7 @@ if __name__ == '__main__':
     pregunta, alternativas = choose_q('basicas')
     print(f'El enunciado es: {pregunta}')
     print(f'Las alternativas son: {alternativas}')  
-    pregunta, alternativas = choose_q('basicas')
+    pregunta, alternativas = choose_q('avanzadas')
     print(f'El enunciado es: {pregunta}')
     print(f'Las alternativas son: {alternativas}')
     
