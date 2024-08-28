@@ -20,3 +20,5 @@ class Medicamento():
         else:
             print("El precio '{}' no es un precio válido".format(
             precio_entregado))
+            self.precio=0
+            self.descuento = 0
