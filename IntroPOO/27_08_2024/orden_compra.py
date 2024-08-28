@@ -11,7 +11,7 @@ class OrdenCompra():
 
     def asigna_monto(self, nuevo_monto: int):
         self.monto = nuevo_monto
-        self.codigo_descuento = ""
+        self.codigo_descuento = "sindescto"
         if self.monto > 20000:
             self.codigo_descuento = "20PORCIENTO"
         elif self.monto > 10000:

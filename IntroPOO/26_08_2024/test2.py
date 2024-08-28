@@ -17,3 +17,5 @@ pelota2.asigna_color("azul")
 pelota2.comparar_colores(pelota_multicolor)
 pelota2.asigna_color("verde")
 pelota_multicolor.comparar_colores(pelota2)
+pelota3 = Pelota
+print(type(pelota2),type(pelota_multicolor),type(pelota3))
