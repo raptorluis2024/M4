@@ -3,6 +3,7 @@ class Pelota():
         self._color = color
         self._tamano = max(1, tamano)
         self._material = material
+    
     @property
     def color(self):
         return self._color
@@ -16,6 +17,7 @@ class Pelota():
     @property
     def tamano(self):
         return self._tamano
+    
     @tamano.setter
     def tamano(self, valor):
         if valor < 1:
