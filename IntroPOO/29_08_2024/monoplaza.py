@@ -13,7 +13,10 @@ class Redbull(Monoplaza):
         print("El monoplaza Redbull acelera hasta los 450km/h")
     def frenado(self):
         print("El monoplaza Redbull tiene buena capacidad de frenado")
+    def __str__(self):
+        return("soy un redbull")
         
 redbull = Redbull()
 redbull.aceleracion()
 redbull.frenado()
+print(redbull)
