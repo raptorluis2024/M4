@@ -18,6 +18,14 @@ class PelotaDeFutbol(PelotaDeDeporte):
     @property
     def cantidad_hexagonos(self):
         return self.__cantidad_hexagonos
+"""
+la pelota de futbol sabe obtener el color como su padre, pero al sobreescribirlo lo hace a 
+su manera
+    @property
+    def color(self):
+        return f"{super().color} al estilo Pelota de Futbol"
+""" 
+
 
 pdf = PelotaDeFutbol("Blanco y Negro", 15)
 # Salida: Blanco y Negro
