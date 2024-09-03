@@ -6,4 +6,4 @@ class Jugador(Personaje):
     
     def defensa(self, ataque: int) -> None:
         self.hp -= max(ataque - random.randint(1, self.df), 0)
-        #print(self.hp)
+        print(self.hp)

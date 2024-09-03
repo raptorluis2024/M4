@@ -13,7 +13,7 @@ class PelotaDeJuguete(PelotaDePlastico):
         self.rebotes = []
         while altura > 0:
             self.rebotes += [altura, 0]
-            print(self.rebotes)
+           # print(self.rebotes)
             altura //= 2
             
 pdj = PelotaDeJuguete()
@@ -21,6 +21,7 @@ pdj.rebotar(5)
 # Salida: [5, 0, 1, 0]
 print(pdj.rebotes)
 # Se hace llamado al método del padre PelotaDePlastico
+print(type(pdj))
 super(type(pdj), pdj).rebotar(5)
 # Salida: [5, 0, 2, 0, 1, 0]
 print(pdj.rebotes)
