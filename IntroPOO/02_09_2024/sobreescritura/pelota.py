@@ -21,7 +21,7 @@ class PelotaDeTenis(PelotaDeDeporte):
     
     @color.setter
     def color(self, color: str) -> None:
-        pass
+        self.__color = color
     
 pdt = PelotaDeTenis()
 pdt.color = "Rojo"

@@ -19,7 +19,15 @@ class PelotaDePingPong(PelotaDeDeporte, PelotaDePlastico):
 
     def __str__(self):
         return f"{self.tamaño} {self.material} {self.timbre}"
-    
+ 
+class PelotaDeTennis(PelotaDeDeporte, PelotaDePlastico):
+    def __init__(self, textura: str, **kwargs):
+        super().__init__(**kwargs)
+        print("Creando pelota de tennis")
+        self.textura = textura
+
+    def __str__(self):
+        return f"{self.tamaño} {self.material} {self.textura}"   
     
 # Salida:
 # Creando pelota de plástico
@@ -27,3 +35,5 @@ class PelotaDePingPong(PelotaDeDeporte, PelotaDePlastico):
 # Creando pelota de ping pong
 pdpp = PelotaDePingPong(tamaño=4, material="celuloide",timbre="POWERTI")
 print(pdpp)
+pdt = PelotaDeTennis(tamaño=10, material="caucho", textura="rugosa")
+print(pdt)
