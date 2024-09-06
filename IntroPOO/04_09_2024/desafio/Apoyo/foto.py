@@ -38,11 +38,3 @@ class Foto():
     def __str__(self) -> str:
         return f"Alto: {self.alto} Ancho: {self.ancho} Ruta: {self.ruta} "
     
-f = Foto(100,100,"\\assets\\img")
-print(f)
-f.alto = 1000
-print(f)
-f.ancho = 2000
-print(f)
-f.alto= 3000
-print(f)
