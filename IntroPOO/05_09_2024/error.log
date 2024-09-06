@@ -1,4 +1,1 @@
-
-[2024-09-05 20:56:57] ERROR: invalid literal for int() with base 10: 'kllkj'
-[2024-09-05 20:57:01] ERROR: invalid literal for int() with base 10: 'jhgjgj'
-[2024-09-05 21:01:12] ERROR: invalid literal for int() with base 10: ''
+ERROR: invalid literal for int() with base 10: '& C:/Users/luisp/AppData/Local/Programs/Python/Python312/python.exe c:/Users/luisp/proyectos/M4/IntroPOO/05_09_2024/archivos/test.py'ERROR: invalid literal for int() with base 10: ''

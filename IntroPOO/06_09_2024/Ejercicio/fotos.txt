@@ -1,0 +1,7 @@
+100,100,"\\assets\\img\\imagen1.jpg"
+300,400,"\\assets\\img\\imagen2.jpg"
+500,500,"\\assets\\img\\imagen3.jpg"
+1500,1200,"\\assets\\img\\imagen4.jpg"
+4500,1200,"\\assets\\img\\imagen5.jpg"
+900,100,"\\assets\\img\\imagen6.jpg"
+900,4000,"\\assets\\img\\imagen6.jpg"
