@@ -1,0 +1,4 @@
+[2024-09-06 20:39:18] ERROR: mensaje de prueba
+[2024-09-06 20:50:55] ERROR: Error en ancho foto "\\assets\\img\\imagen5.jpg"
+ 4500 Excede al maximo que es 2500
+[2024-09-06 20:50:55] ERROR: Error en alto foto "\\assets\\img\\imagen7.jpg" 4000 Excede al maximo que es 2500

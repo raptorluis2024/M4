@@ -7,7 +7,9 @@ class DimensionError(Exception):
         if self.dimension is None and self.maximo is None:
             return super().__str__()
         else:
-            return f"{self.mensaje} {self.dimension} Excede al máximo que es {self.maximo}"
+            return f"{self.mensaje} {self.dimension} Excede al maximo que es {self.maximo}"
+
+    
     
         
 

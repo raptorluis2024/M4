@@ -4,4 +4,4 @@
 1500,1200,"\\assets\\img\\imagen4.jpg"
 4500,1200,"\\assets\\img\\imagen5.jpg"
 900,100,"\\assets\\img\\imagen6.jpg"
-900,4000,"\\assets\\img\\imagen6.jpg"
+900,4000,"\\assets\\img\\imagen7.jpg"
