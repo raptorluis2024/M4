@@ -41,3 +41,5 @@ except LargoExcedidoException as ex:
 except SubTipoInvalidoError as err:
     print(err)
     crearLog("error.log", err.mensaje)
+else:
+    print("Datos procesados satisfactoriamente")
