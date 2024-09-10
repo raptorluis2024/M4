@@ -1,10 +1,11 @@
+from error import SubTipoInvalidoError
 class Anuncio():
     def __init__(self, ancho:int, alto:int, url_archivo:str,url_click:str, sub_tipo:str ) -> None:
         self.__ancho = 1 if ancho < 0 else ancho
         self.__alto = 1 if alto < 0 else alto
         self.__url_archivo = url_archivo
         self.__url_click = url_click
-        self.__subtipo = sub_tipo
+        self.__sub_tipo = sub_tipo
             
     @property
     def alto(self):
@@ -28,10 +29,16 @@ class Anuncio():
         return self.__url_click
     @property
     def sub_tipo(self):
-        return self.__subtipo
+        return self.__sub_tipo
+    
     @sub_tipo.setter
     def sub_tipo(self, subtipo):
-        self.__subtipo = subtipo
+        print(type(self))
+        self.__sub_tipo = subtipo
+        #if subtipo not in instancia.SUB_TIPOS:
+            #raise SubTipoInvalidoError("No se puede cambiar el #tipo") 
+        #else:
+          #  self.__subtipo = subtipo
         
     @staticmethod
     def mostrar_formatos(instancia):
@@ -94,8 +101,14 @@ class Video(Anuncio):
         return super().mostrar_formatos(self)
 
 if __name__ == "__main__":
-    video = Video("url_archivo","url_click","instream",100)
-    Anuncio.mostrar_formatos(video)
-    social = Social(100,100,"dsds","fdsfsdfsd","algo")
-    Anuncio.mostrar_formatos(social)
+    try:
+        video = Video("url_archivo","url_click","instream",100)
+        Anuncio.mostrar_formatos(video)
+        social = Social(100,100,"dsds","fdsfsdfsd","algo")
+        Anuncio.mostrar_formatos(social)
+        print(video.sub_tipo)
+        
+    except SubTipoInvalidoError as ex:
+        print(ex)
+        
  
