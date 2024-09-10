@@ -1,0 +1,3 @@
+class Campania():
+    pass
+    
