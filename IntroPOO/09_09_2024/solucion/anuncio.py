@@ -35,7 +35,7 @@ class Anuncio():
     def sub_tipo(self, subtipo):
              
         if subtipo not in self.SUB_TIPOS:
-            raise SubTipoInvalidoError("No se puede cambiar el tipo") 
+            raise SubTipoInvalidoError(f"Error:{self.__class__.__name__} No se puede cambiar el tipo") 
         else:
             self.__sub_tipo = subtipo
         
@@ -64,20 +64,20 @@ class Display(Anuncio):
     SUB_TIPOS = ("tradicional", "native")
     
     def comprimir_anuncio(self):
-        return super().comprimir_anuncio()
+        print("COMPRESION DE ANUNCIOS DISPLAY NO IMPLEMENTADA AÚN")
     
     def redimensionar_anuncio(self):
-        return super().redimensionar_anuncio()
+        print("RECORTE DE ANUNCIOS DISPLAY NO IMPLEMENTADO AUN")
 
 class Social(Anuncio):
     FORMATO = "Social"
     SUB_TIPOS = ("facebook", "linkedin")
             
     def comprimir_anuncio(self):
-        return super().comprimir_anuncio()
+        print("COMPRESION DE ANUNCIOS REDES SOCIALES NO IMPLEMENTADA AÚN")
     
     def redimensionar_anuncio(self):
-        return super().redimensionar_anuncio()
+        print("RECORTE DE ANUNCIOS REDES SOCIALES NO IMPLEMENTADO AUN")
 
 class Video(Anuncio):
     FORMATO = "Video"
@@ -88,13 +88,25 @@ class Video(Anuncio):
         self.__ancho = 1
         self.__alto = 1
         self.__duracion = duracion
+
+    @property
+    def duracion(self):
+        return self.__duracion
+
+    @duracion.setter
+    def duracion(self, duracion):
+        if duracion > 0:
+            self.__duracion = duracion 
+        else:
+            self.__duracion = 5
+        
         
             
     def comprimir_anuncio(self):
-        return super().comprimir_anuncio()
+        print("COMPRESION DE VIDEO NO IMPLEMENTADA AÚN")
     
     def redimensionar_anuncio(self):
-        return super().redimensionar_anuncio()
+        print("RECORTE DE VIDEO NO IMPLEMENTADO AUN")
     
     def mostrar_formatos(self):
         return super().mostrar_formatos(self)

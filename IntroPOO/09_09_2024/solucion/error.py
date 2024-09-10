@@ -2,8 +2,19 @@ class Error(Exception):
     pass
 
 class LargoExcedidoException(Error):
-    pass
+    def __init__(self, mensaje:str) -> None:
+        self.__mensaje = mensaje
+            
+    @property
+    def mensaje(self):
+        return self.__mensaje
 
 class SubTipoInvalidoError(Error):
     def __init__(self, mensaje:str) -> None:
-        super().__init__(mensaje)
+        self.__mensaje = mensaje
+            
+    @property
+    def mensaje(self):
+        return self.__mensaje
+    
+
