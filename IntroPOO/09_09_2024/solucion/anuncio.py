@@ -33,10 +33,7 @@ class Anuncio():
     
     @sub_tipo.setter
     def sub_tipo(self, subtipo):
-        print(type(self))
-        if isinstance(self, Video):
-            print("video")
-           
+             
         if subtipo not in self.SUB_TIPOS:
             raise SubTipoInvalidoError("No se puede cambiar el tipo") 
         else:
