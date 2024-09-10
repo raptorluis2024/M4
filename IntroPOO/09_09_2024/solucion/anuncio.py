@@ -34,11 +34,13 @@ class Anuncio():
     @sub_tipo.setter
     def sub_tipo(self, subtipo):
         print(type(self))
-        self.__sub_tipo = subtipo
-        #if subtipo not in instancia.SUB_TIPOS:
-            #raise SubTipoInvalidoError("No se puede cambiar el #tipo") 
-        #else:
-          #  self.__subtipo = subtipo
+        if isinstance(self, Video):
+            print("video")
+           
+        if subtipo not in self.SUB_TIPOS:
+            raise SubTipoInvalidoError("No se puede cambiar el tipo") 
+        else:
+            self.__sub_tipo = subtipo
         
     @staticmethod
     def mostrar_formatos(instancia):
@@ -103,11 +105,13 @@ class Video(Anuncio):
 if __name__ == "__main__":
     try:
         video = Video("url_archivo","url_click","instream",100)
+        print(video.sub_tipo)
         Anuncio.mostrar_formatos(video)
         social = Social(100,100,"dsds","fdsfsdfsd","algo")
         Anuncio.mostrar_formatos(social)
         print(video.sub_tipo)
-        
+        video.sub_tipo = "prueba"
+        print(video.sub_tipo)
     except SubTipoInvalidoError as ex:
         print(ex)
         
