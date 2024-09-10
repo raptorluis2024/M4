@@ -1,5 +1,5 @@
 from campania import Campania
-from error import LargoExcedidoException
+from error import LargoExcedidoException,SubTipoInvalidoError
 from log import crearLog
 from datetime import date
 
@@ -30,7 +30,14 @@ try:
     
     c.nombre = input("Nombre de la campaña (Max 250 c): ")
     print(c)
+    
+    tipo = input("Ingrese el nuevo tipo para el video de la campaña: ")
+    c.getAnuncio(0).sub_tipo = tipo
+    
 
 except LargoExcedidoException as ex:
     print(ex)
     crearLog("error.log", ex.mensaje)
+except SubTipoInvalidoError as err:
+    print(err)
+    crearLog("error.log", err.mensaje)

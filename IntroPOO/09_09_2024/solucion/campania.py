@@ -22,6 +22,9 @@ class Campania():
             anunciostemp.append(anuncio)
         return anunciostemp
     
+    def getAnuncio(self, pos:int):
+        return self.__anuncios[pos]
+    
     def contarAnuncios(self):
         v=d=s=0
         for a in self.__anuncios:
