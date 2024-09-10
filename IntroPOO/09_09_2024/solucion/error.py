@@ -5,4 +5,5 @@ class LargoExcedidoException(Error):
     pass
 
 class SubTipoInvalidoError(Error):
-    pass
+    def __init__(self, mensaje:str) -> None:
+        super().__init__(mensaje)
