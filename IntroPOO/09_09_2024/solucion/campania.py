@@ -42,7 +42,7 @@ class Campania():
     @nombre.setter
     def nombre(self, nombre:str):
         if len(nombre) > 25:
-            raise LargoExcedidoException("ERROR: Nombre de la campaña exede a 250 caracteres\n")    
+            raise LargoExcedidoException("ERROR: Nombre de la campaña excede a 250 caracteres\n")    
         else:
             self.__nombre = nombre
     @property

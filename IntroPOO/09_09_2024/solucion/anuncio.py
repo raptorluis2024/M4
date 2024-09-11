@@ -67,7 +67,7 @@ class Display(Anuncio):
         print("COMPRESION DE ANUNCIOS DISPLAY NO IMPLEMENTADA AÚN")
     
     def redimensionar_anuncio(self):
-        print("RECORTE DE ANUNCIOS DISPLAY NO IMPLEMENTADO AUN")
+        print("REDIMENSIONAMIENTO DE ANUNCIOS DISPLAY NO IMPLEMENTADO AUN")
 
 class Social(Anuncio):
     FORMATO = "Social"
@@ -77,7 +77,7 @@ class Social(Anuncio):
         print("COMPRESION DE ANUNCIOS REDES SOCIALES NO IMPLEMENTADA AÚN")
     
     def redimensionar_anuncio(self):
-        print("RECORTE DE ANUNCIOS REDES SOCIALES NO IMPLEMENTADO AUN")
+        print("REDIMENSIONAMIENTO DE ANUNCIOS REDES SOCIALES NO IMPLEMENTADO AUN")
 
 class Video(Anuncio):
     FORMATO = "Video"

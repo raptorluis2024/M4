@@ -18,7 +18,7 @@ anuncios = [{"tipo":"Video",
              {"tipo":"Display",
              "url_archivo":"http://www.campania2024.cl/archivo3.html",
              "url_click":"http://www.campania2024.cl",
-             "sub_tipo":"instream",
+             "sub_tipo":"tradicional",
              "ancho":220,
              "alto":200}
              ]
@@ -31,8 +31,8 @@ try:
     c.nombre = input("Nombre de la campaña (Max 250 c): ")
     print(c)
     
-    tipo = input("Ingrese el nuevo tipo para el video de la campaña: ")
-    c.getAnuncio(0).sub_tipo = tipo
+    tipo = input("Ingrese el nuevo tipo para el display de la campaña: ")
+    c.getAnuncio(2).sub_tipo = tipo
     
 
 except LargoExcedidoException as ex:
